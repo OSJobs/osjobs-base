@@ -1,0 +1,9 @@
+.bg-div {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
