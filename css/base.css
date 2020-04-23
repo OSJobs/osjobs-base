@@ -3,7 +3,14 @@
   justify-content: center;
 }
 
-.buttons {
-  display: flex;
-  justify-content: center;
+.buttons-list {
+  text-align: center;
+}
+
+.bg-img {
+  width: 100%;
+}
+
+.button-front {
+    margin: 6px;
 }
