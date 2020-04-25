@@ -1,16 +1,13 @@
 function create_ad(parent_id, url, src) { 
-    var out = document.createElement('div'); 
-    out.style.margin = "0 auto";
     var img = document.createElement('img'); 
     img.src =  src;
     img.style.maxWidth = "100%";
     var a = document.createElement('a'); 
     a.href = url;
     a.style.display = "inline-block";
-    a.style.width = "30%";
-    a.style.margin = "10px";
+    a.style.width = "100%";
+    a.style.margin = "6px";
     a.target = "_blank";
-    out.appendChild(a);
     a.appendChild(img);
     document.getElementById(parent_id).appendChild(a); 
 }  
