@@ -45,7 +45,7 @@
     </div>
   </section>
   <section class="section">
-    <div class="container">
+    <div class="four-div container">
       <div class="columns is-multiline is-centered">
         <!-- start 论坛 -->
         <div class="column is-5">
@@ -143,5 +143,26 @@
       </p>
     </div>
   </footer>
+  <script>
+    window.addEventListener('load', function () {
+      var userAgent = window.navigator.userAgent.toLowerCase();
+      safari = /safari/.test(userAgent);
+      ios = /iphone|ipod|ipad|zhihuhybrid/.test(userAgent);
+      if(ios) {
+          if (!safari) {
+            var outDiv = document.createElement("div");
+            outDiv.classList.add("notification");
+            outDiv.classList.add("is-warning");
+            var btn = document.createElement("button");
+            btn.classList.add("delete");
+            outDiv.innerHTML += "请点击右上角的 ··· 使用 Safari 打开本页面";
+            outDiv.appendChild(btn);
+            var container = document.getElementsByClassName("four-div")[0];
+            container.prepend(outDiv);
+          };
+      };
+    });
+  </script>
+
   </body>
 </html>
