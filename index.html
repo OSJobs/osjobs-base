@@ -7,6 +7,7 @@
     <title>Overseas Rabbit | 海外兔</title>
     <link rel="shortcut icon" type="image/png" href="img/rabbit-32.png"/>
     <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/bulma-timeline.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFNKRJN2E7"></script>
     <script>
@@ -188,10 +189,47 @@
       </div> <!-- end columns -->
     </div> <!-- end container -->
   </section>
+  <section class="hero is-bold has-text-centered">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title" style="font-size: 1.8rem">
+          海外兔最近更新
+        </h1>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="timeline is-centered" v-show="showTimeline">
+      <header class="timeline-header">
+        <span class="tag is-medium is-info">4 月</span>
+      </header>
+      <div class="timeline-item is-info">
+        <div class="timeline-marker is-info"></div>
+        <div class="timeline-content">
+          <p class="heading">Apr 12th 2023</p>
+          <p>增加<a href="https://osjobs.net/co/">算法讨论微信群（测试版）</a>，目标是提高大家算法练习的热情。</p>
+        </div>
+      </div>
+        <header class="timeline-header">
+            <span class="tag is-medium is-info">3 月</span>
+        </header>
+      <div class="timeline-item is-info">
+        <div class="timeline-marker is-info"></div>
+        <div class="timeline-content">
+          <p class="heading">Mar 23th 2023</p>
+          <p>增加 Lee215 和 Windson 的<a href="https://osjobs.net/co/">精选 Leetcode 题库以及练习方法</a>，方便大家针对性进行练习。</p>
+        </div>
+      </div>
+      <header class="timeline-header">
+        <span class="tag is-medium is-info">之前</span>
+      </header>
+    </div>
+  </section>
+  <br>
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>© 2021 Overseas Rabbit Team All Rights Reserved</strong>
+        <strong>© 2023 Overseas Rabbit Team All Rights Reserved</strong>
       </p>
       <p>
         <strong><a href="mailto:contact@osjobs.net?subject=你好">联系我们</a></strong>
